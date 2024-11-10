@@ -116,7 +116,7 @@ reglasframe2
 ```
 
 Análisis de clúster
-```{r}
+```{r} 
 data_importacion
 data_importacion_apriori = subset(data_importacion, select = -NOMBRE_PAIS)
 data_importacion_apriori = subset(data_importacion_apriori, select = -CONTINENTE)
