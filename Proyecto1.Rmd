@@ -105,4 +105,45 @@ reglasframe2
 
 ```
 
+Análisis de clúster
+```{r}
+data_importacion
+data_importacion_apriori = subset(data_importacion, select = -NOMBRE_PAIS)
+data_importacion_apriori = subset(data_importacion_apriori, select = -CONTINENTE)
+data_importacion_apriori = subset(data_importacion_apriori, select = -ANYO_MES)
+reglas_importacion_apriori = apriori(data_importacion_apriori, parameter = list(support = 0.2, confidence = 0.5) )
 
+inspect(reglas_importacion_apriori)
+
+summary(data_importacion_apriori)
+
+cluster <- kmeans(data_importacion_apriori, centers=3)
+
+ggplot(data_importacion_apriori, aes(x = ADUANA, y = VALOR, color = as.factor(cluster$cluster)))+
+  geom_point()+
+  geom_point(data = as.data.frame(cluster$centers), aes(x=PAIS, y = VALOR), color = "black", size=4, shape=17)+
+  labs(title = "ADUANA vs VALOR")+
+  theme_minimal()
+
+
+ggplot(data_importacion_apriori, aes(x = ADUANA, y = VALOR, color = as.factor(cluster$cluster), shape = as.factor(cluster$cluster))) +
+  geom_point(size = 3, alpha = 0.7) +  # Plot data points with alpha for transparency
+  geom_point(data = as.data.frame(cluster$centers),  # Add cluster centers
+             aes(x = ADUANA, y = VALOR), fill = c("yellow", "cyan", "magenta"), color = "black", size = 5, shape = 21) +
+  scale_fill_manual(values = c("yellow", "cyan", "magenta")) +  # Assign colors for centroid fill
+  geom_encircle(aes(group = cluster$cluster, fill = as.factor(cluster$cluster)), 
+                alpha = 0.2, s_shape = 1, expand = 0.05) +  # Encircle each cluster
+  scale_color_manual(values = c("red", "green", "blue")) +  # Custom colors for clusters
+  scale_shape_manual(values = c(16, 17, 15)) +  # Custom shapes for clusters
+  labs(title = "ADUANA vs VALOR", x = "ADUANA", y = "VALOR") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    legend.position = "right",
+    legend.title = element_blank()
+  )
+
+
+
+
+```
