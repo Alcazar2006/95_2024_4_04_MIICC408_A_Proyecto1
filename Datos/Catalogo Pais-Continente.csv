@@ -1,0 +1,282 @@
+﻿Código,CodContinente,País,Continente
+1003,1,Canadá,América
+1005,1,Estados Unidos ,América
+1006,1,Groenlandia ,América
+1007,1,México,América
+1008,1,San Pedro y  Miguelon,América
+2101,1,Costa Rica,América
+2102,1,El Salvador,América
+2103,1,Guatemala (Cod. Sat) Devoluciones                           ,América
+2104,1,Honduras,América
+2107,1,Nicaragua,América
+2108,1,Países no Especificados C. A.,América
+2201,1,Zona del Canal de Panamá                                    ,América
+2202,1,Zona Libre De Colon ( Panamá ),América
+2203,1,Zona Franca -Cie- Centro Industrial Para La Exportación,América
+2206,1,Belice,América
+2208,1,Panamá,América
+2209,1,Zona Libre Puerto Cortes ( Honduras ),América
+2210,1,Zona Libre De Industria Y Comercio Zolic ( Guatemala ),América
+2211,1,Zona Franca De Amatitlan ( Guatemala ),América
+2212,1,Zona Franca De San Marcos ( Guatemala ),América
+2213,1,Zona Franca El Cacao ( Guatemala ),América
+2214,1,"Zona Franca Parque Industrial Zeta La Unión, S.A.",América
+2215,1,"Zona Franca Cropa, S.A. (Guatemala)",América
+2216,1,Zona Franca Omega (Guatemala),América
+2217,1,Zona Franca El Naranjo (Guatemala),América
+2218,1,"Zona Franca Zofraco, S.A. (Guatemala)",América
+2219,1,"Zonas Francas Actuales, S.A. Zofracsa (Guatemala)",América
+2220,1,"Zona Franca Pelicano, S.A. (Guatemala)",América
+2221,1,"Región Libre Internacional , S.A. (Guatemala)",América
+2222,1,Zona Franca -Rdc- Industrias Modernas (Guatemala),América
+2223,1,Zona Franca Empresa Industrial Doble B (Guatemala),América
+2224,1,Zona Franca Tecun Umán (Guatemala),América
+2303,1,Barbados,América
+2311,1,Cuba,América
+2331,1,Haití,América
+2341,1,Jamaica,América
+2354,1,República Dominicana,América
+2367,1,Trinidad y Tobago,América
+2402,1,Antigua y Barbuda,América
+2406,1,Bahamas,América
+2408,1,Bermudas ( Reino Unido ),América
+2411,1,Islas Caimán ( Reino Unido ),América
+2413,1,Dominica,América
+2431,1,Granada,América
+2434,1,Montserrat ( Reino Unido ),América
+2436,1,San Cristóbal y Nevis,América
+2437,1,Santa Lucia,América
+2438,1,San Vicente y Las Granadinas,América
+2439,1,Anguila ( Reino Unido ),América
+2451,1,Islas Turcas Y Caicos ( Reino Unido ),América
+2461,1,Islas Vírgenes Británicas ( Reino Unido ),América
+2462,1,San Martin,América
+2501,1,Guadalupe ( Francia ),América
+2502,1,Martinica ( Francia ),América
+2601,1,Aruba ( Países Bajos ),América
+2602,1,"Curazao, Antillas Neerlandesas ( Países Bajos )",América
+2701,1,Islas Vírgenes ( Estados Unidos De América ),América
+2705,1,Puerto Rico ( Estados Unidos De América ),América
+3101,1,Colombia,América
+3102,1,Ecuador,América
+3103,1,Guyana                                                      ,América
+3104,1,Guayana Francesa ( Francia ),América
+3106,1,Surinam,América
+3107,1,Venezuela,América
+3201,1,Brasil,América
+3301,1,Argentina,América
+3304,1,Islas Malvinas O Falkland                                   ,América
+3307,1,Territorio Antartico Britanico ( Reino Unido ),América
+3308,1,Uruguay,América
+3309,1,Islas Georgia Del Sur Y Sandwich Del Sur (Reino Unido),América
+3401,1,Bolivia,América
+3403,1,Paraguay,América
+3503,1,Chile,América
+3507,1,Perú,América
+4029,2,Islas Svalbard y Jan Mayen (Noruega),Europa
+4101,2,"Alemania, Republica Federal",Europa
+4102,2,"Alemania, Republica Democrática                             ",Europa
+4103,2,Andorra,Europa
+4104,2,Alemania,Europa
+4106,2,Austria,Europa
+4107,2,Bélgica,Europa
+4108,2,Santa Sede                                                  ,Europa
+4112,2,Dinamarca,Europa
+4113,2,España,Europa
+4114,2,Islas Feroe ( Dinamarca ),Europa
+4116,2,Francia,Europa
+4117,2,Gibraltar ( Reino Unido ),Europa
+4118,2,Irlanda,Europa
+4121,2,Islandia,Europa
+4122,2,Italia,Europa
+4123,2,Malta,Europa
+4125,2,Mónaco,Europa
+4126,2,Islas del Canal ( Reino Unido ),Europa
+4127,2,Noruega,Europa
+4128,2,Países Bajos,Europa
+4131,2,Portugal,Europa
+4132,2,Reino Unido,Europa
+4133,2,Suecia,Europa
+4134,2,Suiza,Europa
+4135,2,Luxemburgo,Europa
+4136,2,San Marino,Europa
+4201,2,Albania,Europa
+4202,2,Bulgaria,Europa
+4203,2,Checoslovaquia                                              ,Europa
+4204,2,Finlandia,Europa
+4206,2,Grecia,Europa
+4207,2,Hungría,Europa
+4208,2,Polonia,Europa
+4211,2,Rumania,Europa
+4213,2,Yugoslavia                                                  ,Europa
+4214,2,República Checa,Europa
+4215,2,Eslovenia,Europa
+4216,2,Bosnia-Herzegovina,Europa
+4217,2,Macedonia,Europa
+4218,2,Moldavia,Europa
+4219,2,Estonia,Europa
+4220,2,Letonia,Europa
+4221,2,Bielorrusia,Europa
+4223,2,Eslovaquia,Europa
+4224,2,Liechtenstein,Europa
+4225,2,Croacia                                                     ,Europa
+4226,2,Lituania                                                    ,Europa
+4227,2,Ucrania                                                     ,Europa
+4228,2,Serbia y Montenegro,Europa
+5103,3,Arabia Saudita,Asia
+5106,3,Estado de Bahrein,Asia
+5107,3,Chipre,Asia
+5109,3,Emiratos Árabes Unidos,Asia
+5111,3,Irak,Asia
+5112,3,Irán,Asia
+5113,3,Israel,Asia
+5115,3,Territorio De Palestina                                     ,Asia
+5118,3,Jordania,Asia
+5121,3,Kuwait,Asia
+5124,3,Líbano,Asia
+5136,3,Omán,Asia
+5141,3,Qatar,Asia
+5158,3,Siria,Asia
+5168,3,Turquía,Asia
+5172,3,República de Yemen                                          ,Asia
+5173,3,Armenia,Asia
+5174,3,Azerbaiyan                                                  ,Asia
+5175,3,Georgia                                                     ,Asia
+5201,3,Afganistán,Asia
+5204,3,Bhutan,Asia
+5207,3,Cachemira,Asia
+5208,3,Sri Lanka,Asia
+5211,3,India,Asia
+5222,3,Maldivas,Asia
+5223,3,Nepal,Asia
+5236,3,Pakistán,Asia
+5239,3,Bangladesh,Asia
+5240,3,Kazajstán                                                   ,Asia
+5241,3,Kirguistán                                                  ,Asia
+5242,3,Tayikistán                                                  ,Asia
+5243,3,Turkmenistán                                                ,Asia
+5244,3,Uzbekistán                                                  ,Asia
+5302,3,Myanmar,Asia
+5303,3,Brunei,Asia
+5306,3,Camboya,Asia
+5307,3,Filipinas,Asia
+5312,3,Indonesia,Asia
+5314,3,República Democrática Popular de Laos,Asia
+5316,3,"Lebuan, Isla",Asia
+5321,3,Malasia,Asia
+5323,3,Isla de Navidad ( Australia ),Asia
+5331,3,Sabah,Asia
+5332,3,Sarawak,Asia
+5333,3,Singapur,Asia
+5341,3,Tailandia,Asia
+5344,3,Timor Portugués,Asia
+5351,3,Vietnam,Asia
+5353,3,Timor del Este,Asia
+5401,3,Corea del Norte,Asia
+5402,3,Corea del Sur,Asia
+5404,3,China,Asia
+5406,3,Taiwán,Asia
+5408,3,Hong Kong ,Asia
+5411,3,Japón,Asia
+5413,3,Macao                                          ,Asia
+5414,3,Mongolia,Asia
+6001,3,U.R.S.S.,Asia
+6002,3,Rusia,Asia
+7101,4,Alboran y Perejil,África
+7106,4,Argelia,África
+7111,4,Ceuta ( España ),África
+7121,4,Fezzan ( Niger ),África
+7131,4,Libia,África
+7137,4,Marruecos,África
+7141,4,Melilla  ( Marruecos ),África
+7161,4,Egipto,África
+7171,4,Sudan,África
+7181,4,Túnez,África
+7206,4,Alto Volta,África
+7207,4,Angola,África
+7211,4,Burundi,África
+7212,4,Burkina Faso,África
+7216,4,Cabo Verde,África
+7217,4,Camerún,África
+7221,4,Congo,África
+7222,4,Republica Democrática del Congo ( Zaire ),África
+7224,4,Cote Divoire ( Costa De Marfil / 1997 ),África
+7227,4,Chad,África
+7231,4,Benín,África
+7232,4,Gabón,África
+7236,4,Gambia,África
+7237,4,Ghana,África
+7241,4,Guinea,África
+7242,4,Guinea Ecuatorial,África
+7243,4,Guinea Bissau,África
+7247,4,Liberia,África
+7251,4,Mali,África
+7253,4,Mauritania,África
+7261,4,Níger,África
+7262,4,Nigeria,África
+7266,4,Republica Centroafricana,África
+7268,4,Rwanda,África
+7272,4,Santa Elena ( Reino Unido ),África
+7273,4,Santo Tome y Príncipe,África
+7276,4,Senegal,África
+7277,4,Sierra Leona,África
+7284,4,Togo,África
+7285,4,Sahara Occidental (Marruecos),África
+7306,4,Comoras,África
+7310,4,Djibouti,África
+7312,4,Eritrea,África
+7314,4,Etiopia,África
+7323,4,Kenya,África
+7334,4,Madagascar,África
+7336,4,Mauricio,África
+7338,4,Mozambique,África
+7341,4,Reunión ( Francia ),África
+7351,4,Seychelles,África
+7352,4,Somalia,África
+7361,4,Tanzania,África
+7372,4,Uganda,África
+7404,4,Botswana,África
+7414,4,Lesotho,África
+7421,4,Malawi,África
+7437,4,Rodesia,África
+7440,4,Namibia,África
+7441,4,Sudáfrica,África
+7442,4,Swazilandia,África
+7443,4,Zimbabwe,África
+7444,4,Isla Bouvet (Noruega),África
+7471,4,Zambia,África
+8001,5,Australia,Oceanía
+8004,5,Islas Marshall (Australia),Oceanía
+8005,5,Islas Heard Y Mc Donald (Australia),Oceanía
+8006,5,Islas De Cocos O Keeling ( Australia ),Oceanía
+8007,5,Islas Cook ( Nueva Zelandia ),Oceanía
+8012,5,Guam ( Estados Unidos De América ),Oceanía
+8015,5,Hawaii ( Estados Unidos De América ),Oceanía
+8016,5,Kiribati,Oceanía
+8021,5,Nauru,Oceanía
+8024,5,Niue ( Nueva Zelandia ),Oceanía
+8026,5,Isla De Norfolk ( Australia ),Oceanía
+8027,5,Nueva Caledonia ( Francia ),Oceanía
+8028,5,Mayotte O Mahore (Francia),Oceanía
+8032,5,"Nueva Guinea, Austr.",Oceanía
+8034,5,República de Vanuatu,Oceanía
+8038,5,Nueva Zelandia,Oceanía
+8050,5,Palau,Oceanía
+8051,5,Papua Nueva Guinea,Oceanía
+8054,5,Isla Pitcairn ( Reino Unido ),Oceanía
+8057,5,Polinesia Francesa ( Francia ),Oceanía
+8058,5,Territorios Franceses del Sur,Oceanía
+8064,5,Samoa Occidental,Oceanía
+8065,5,Samoa Americana (Estados Unidos De América),Oceanía
+8071,5,Territorio Alta Comisión Del Pacifico,Oceanía
+8072,5,Tokelau ( Nueva Zelandia ),Oceanía
+8074,5,Tonga,Oceanía
+8076,5,Tuvalu,Oceanía
+8081,5,República de Fiji,Oceanía
+8086,5,Wallis Y Futuna ( Francia ),Oceanía
+8087,5,Estados Federados De Micronesia (Estados Unidos de América),Oceanía
+8088,5,Islas Marianas del Norte (Estados Unidos De América),Oceanía
+8089,5,Islas Salomón,Oceanía
+9900,6,País no Codificado                                          ,Otros
+9901,6,Varios Países (Cod. Sat)                                    ,Otros
+9902,6,Zona Neutral,Otros

@@ -1,18 +1,89 @@
 ---
-title: "R Notebook"
-output: html_notebook
+title: "proyecto 1 Notebook"
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
-
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
-
+Instalacion de paquetes
 ```{r}
-plot(cars)
+install.packages('arules')
+install.packages('dplyr')
+install.packages("ggplot2")
+install.packages("ggalt")
+library(ggalt)
+library(ggplot2)
+library(arules)
+library(dplyr)
+
+```
+Limpieza de los datos
+```{r}
+data_importacion = read.csv('C:\\Users\\dalca\\Documents\\Usac - Maestria\\2024\\Cursos\\Cuarto Trimeste\\Mineria de datos\\Proyecto 1\\95_2024_4_04_MIICC408_A_Proyecto1\\Datos\\Importaciones.csv', sep=',', fileEncoding = "latin1")
+
+catalogo_continente = read.csv('C:\\Users\\dalca\\Documents\\Usac - Maestria\\2024\\Cursos\\Cuarto Trimeste\\Mineria de datos\\Proyecto 1\\95_2024_4_04_MIICC408_A_Proyecto1\\Datos\\Catalogo Pais-Continente.csv', sep=',' ,fileEncoding = "UTF-8")
+catalogo_continente
+
+#Renombrar las columnas
+names(catalogo_continente) <- c("Codigo", "COD_CONTINENTE","CONTINENTE", "NOMBRE_PAIS")
+#Eliminar la columna 'Extra' 
+catalogo_continente <- catalogo_continente[, c("Codigo", "COD_CONTINENTE","CONTINENTE", "NOMBRE_PAIS")]
+
+
+data_importacion
+catalogo_continente
+
+#Unificar la columna de ANYI y MES en una nueva columna
+data_importacion <- data_importacion %>%
+  mutate(ANYO_MES = paste(ANYO, MES, sep = "-"))
+
+#Eliminar  la columna de ANYO y MES, reorganizar las columnas del set de datos
+data_importacion <- data_importacion[, c("ANYO_MES", setdiff(names(data_importacion), c("ANYO_MES","ANYO", "MES")))]
+
+data_importacion = merge(data_importacion, catalogo_continente, by.x = "PAIS", by.y = "Codigo", all.x = TRUE)
+
+data_importacion[is.na(merged_data$CONTINENTE), ]
+sapply(data_importacion, function(x) sum(is.na(x)))
+
+#Corregir los paises sin Catalogo de continentes
+data_importacion
+data_importacion <- data_importacion %>%
+  mutate(
+    NOMBRE_PAIS = case_when(
+      PAIS == 2603 ~ "2603",
+      PAIS == 4229 ~ "4229",
+      TRUE ~ NOMBRE_PAIS
+    ),
+    COD_CONTINENTE = case_when(
+      PAIS == 2603 ~ 1,
+      PAIS == 4229 ~ 2,
+      TRUE ~ COD_CONTINENTE
+    ),
+    CONTINENTE = case_when(
+      PAIS == 2603 ~ "América",
+      PAIS == 4229 ~ "Europa",
+      TRUE ~ CONTINENTE
+    )
+  )
+
+data_importacion[is.na(merged_data$CONTINENTE), ]
+sapply(data_importacion, function(x) sum(is.na(x)))
+
+summary(data_importacion)
+
+#Cambio del campo Valor de char a numeric
+data_importacion$VALOR <- as.numeric(gsub(",", "", data_importacion$VALOR))
+summary(data_importacion)
+
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+Reglas de asociación Apriori
+```{r}
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+data_importacion
+data_importacion_apriori = subset(data_importacion, select = -NOMBRE_PAIS)
+reglas_importacion_apriori = apriori(data_importacion_apriori, parameter = list(support = 0.2, confidence = 0.5) )
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+summary(reglas_importacion_apriori) 
+
+reglas_importacion_apriori
+
+inspect(reglas_importacion_apriori)
+```
