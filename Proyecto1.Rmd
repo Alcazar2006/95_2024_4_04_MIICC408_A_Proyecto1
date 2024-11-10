@@ -4,16 +4,27 @@ title: "proyecto 1 Notebook"
 
 Instalacion de paquetes
 ```{r}
+Sys.setenv(PATH = paste("C:/rtools40/usr/bin;C:/rtools40/ucrt64/bin", Sys.getenv("PATH"), sep = ";"))
+
+Sys.which("make")
+install.packages("C:\\Users\\dalca\\Downloads\\db_csv_\\fim4r_1.8\\fim4r", 
+repos = NULL, 
+type = "source")
 install.packages('arules')
 install.packages('dplyr')
 install.packages("ggplot2")
 install.packages("ggalt")
+
+```
+
+Imports
+```{r}
 library(ggalt)
 library(ggplot2)
 library(arules)
 library(dplyr)
-
 ```
+
 Limpieza de los datos
 ```{r}
 data_importacion = read.csv('C:\\Users\\dalca\\Documents\\Usac - Maestria\\2024\\Cursos\\Cuarto Trimeste\\Mineria de datos\\Proyecto 1\\95_2024_4_04_MIICC408_A_Proyecto1\\Datos\\Importaciones.csv', sep=',', fileEncoding = "latin1")
@@ -39,7 +50,6 @@ data_importacion <- data_importacion[, c("ANYO_MES", setdiff(names(data_importac
 
 data_importacion = merge(data_importacion, catalogo_continente, by.x = "PAIS", by.y = "Codigo", all.x = TRUE)
 
-data_importacion[is.na(merged_data$CONTINENTE), ]
 sapply(data_importacion, function(x) sum(is.na(x)))
 
 #Corregir los paises sin Catalogo de continentes
@@ -63,7 +73,7 @@ data_importacion <- data_importacion %>%
     )
   )
 
-data_importacion[is.na(merged_data$CONTINENTE), ]
+data_importacion[is.na(data_importacion$CONTINENTE), ]
 sapply(data_importacion, function(x) sum(is.na(x)))
 
 summary(data_importacion)
@@ -142,8 +152,5 @@ ggplot(data_importacion_apriori, aes(x = ADUANA, y = VALOR, color = as.factor(cl
     legend.position = "right",
     legend.title = element_blank()
   )
-
-
-
 
 ```
