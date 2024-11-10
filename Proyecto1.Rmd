@@ -87,3 +87,22 @@ reglas_importacion_apriori
 
 inspect(reglas_importacion_apriori)
 ```
+Reglas de asociación FP-Growth
+```{r}
+
+data_importacion
+datamsc <- data_importacion
+datamsc1 <- datamsc[, c(1,2,4,5,6,7,8)]
+reglas <- fim4r(datamsc1, method = "fpgrowth", target="rules", supp = .2, conf = .5)
+reglasframe <- as(reglas, "data.frame")
+reglasframe
+
+datamsc2 <- subset(data_importacion, CONTINENTE != "América")
+datamsc2 <-  datamsc2[, c(1,2,4,5,6,7,8)]
+reglas2 <- fim4r(datamsc2, method = "fpgrowth", target="rules", supp = .2, conf = .5)
+reglasframe2 <- as(reglas2, "data.frame")
+reglasframe2
+
+```
+
+
